@@ -12,7 +12,7 @@
 				"-g",	//allow debugging
 				"${file}",	//current file
 				"-o",		//output 
-				"${fileDirname}/bin/${fileBasenameNoExtension}"		//output executable into bin
+				"${fileDirname}/../bin/${fileBasenameNoExtension}"		//output executable into bin
 			],
 			"options": {
 				"cwd": "${fileDirname}"

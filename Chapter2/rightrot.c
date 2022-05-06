@@ -8,13 +8,10 @@ unsigned int rightrot(unsigned int x, int n) {
         x >>= 1;    //rotate one place to right
 
         //set the left most bit if it needs setting
-        x |= lsb << (sizeof(x) * 8) - 1;
+        x |= lsb << ((sizeof(x) * 8) - 1);
     }
-
-    return x;
-    
+    return x; 
 }
-
 
 int main() {
 

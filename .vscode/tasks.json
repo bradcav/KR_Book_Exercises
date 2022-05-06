@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc build active file",
+			"command": "/usr/bin/gcc",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-Wall",	//all warnings enables
+				"-Wextra",
+				"-g",	//allow debugging
+				"${file}",	//current file
+				"-o",		//output 
+				"${fileDirname}/../bin/${fileBasenameNoExtension}"		//output executable into bin
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"isDefault": true,
+				"kind": "build"
+			},
+			"detail": "compiler: /usr/bin/gcc"
+		}
+	]
+}
